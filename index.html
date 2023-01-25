@@ -1,378 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki Landing page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
-        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            body {
-                font-family: 'Raleway', serif;
-                }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <style>
+        body {
+            font-family: 'Raleway', serif;
+        }
     </style>
 </head>
 
 <body>
 
+    <main>
 
-<!-- Nav Bar-->
-<header> 
-    <div class="navbar">
-        <div id="nav-container">
-            <!--Logo-->
-            <img class="logo" src="./images/logo/Booki.png" height="50px"> 
-            <!--links section-->
-            <!--make sure to have top border blue one selection as well as text colour change -->
-            <div class="toplinks">
-                
-                    <!--Accommodations internal Link-->
-                    <a class ="accommodation-link" href="#accommodation-title">Accommodations</a>
-                    <br>          
-                    <!--Activities internal Link -->
-                    <a class ="activities-link" href="#activities-title">Activities</a>
-                
-            </div>
-        </div>    
-    </div>   
-</header>
+        <!-- Nav Bar-->
+        <header>
+            <div class="navbar">
+                <div id="nav-container">
+                    <!--Logo-->
+                    <img id="logo" src="./images/logo/Booki.png" height="50px">
+                    <!--links section-->
+                    <!--make sure to have top border blue one selection as well as text colour change -->
+                    <div id="toplinks">
+                        <!--Accommodations internal Link-->
+                        <a id="accommodation-link" href="#accommodation-title">Accommodations</a>
+                        <!--Accommodations small screen link -->
+                        <a id="accommodation-link-small-screen" href="#accommodation-title">Accommodations</a>
 
-<main>
-                    
-<!-- Title and tagline-->
-    <h1>Find a place for your dream vacation</h1>
-    <p id="tagline">Downtown or in nature<p>
-
-<!-- Search section -->
-    <!--Functional specs
-    Users will be able to search for accommodation in the town of their
-    choosing. The search field is an input field, so users will need to be
-    able to edit this. This field should be part of a form so that it can be 
-    validated by W3C. The search part does not need to be functional -->
-    <div class="search-panel">
-        <!--map icon-->
-            <img id="map-icon"src="./Icons/geo-alt-fill.svg">
-            <!--form-->
-            <input type="text" name="search" placeholder="Marseille, France">
-            <!--radio search button-->
-            <input type="submit" name="search" placeholder="Search">
-    </div>
-
-<!-- Filter section-->
-    <!--Functional specs
-    The filters should change appearance during mouseover. I’ll leave
-    the exact effect up to you, I’ve not had time to think about it. But it
-    doesn’t need to be functional  -->
-    <div class="filter-panel">
-        <h2 id="filter-title">Filter<h2>
-            
-        <!--Low Cost-->
-        <div id="filter">
-            <!--Low Cost icon -->
-            <img class="icon" src="./Icons/cash.svg" height="16px"  width="16px">
-            <!--Low Cost Text -->
-            <p class="filter-txt">Low Cost</p>
-        </div>
-        
-        <!--Family-Friendly-->
-        <div id="filter">
-            <!--Family-Friendly icon -->
-            <img class="icon" src="./Icons/people.svg" height="16px"  width="16px">
-            <!--Family-Friendly text -->
-            <p class="filter-txt">Family-Friendly</p>
-        </div>
-
-        <!--Romantic-->
-        <div id="filter">
-            <!--Romantic icon-->
-            <img class="icon" src="./Icons/heart-fill.svg" height="16px"  width="16px">
-            <!--Romantic text-->
-            <p class="filter-txt">Romantic</p> 
-        </div>
-
-        <!--Pets Allowed-->
-        <div id="filter">
-            <!--Pets Allowed icon-->
-            <img class="icon"src="./Icons/paw-black-shape-svgrepo-com.svg" height="16px"  width="16px">
-            <!--Pets Allowed text-->
-            <p class="filter-txt">Pets allowed</p>
-        </div>
-    </div>
-                            
-<!--info section-->
-    <div class="info-section">
-        <!--info icon-->
-        <img src="./Icons/info-circle-fill.svg">
-        <!--INFO text-->
-        <p id="cityinfo"> More than 500 accommodations are available in this city <p>
-    </div>
-    
-<!--Accommodations in Marseille Section-->
-    <!--Functional specs
-    Users will be able to search for accommodation in the town of their
-    choosing. The search field is an input field, so users will need to be
-    able to edit this. This field should be part of a form so that it can be 
-    validated by W3C. The search part does not need to be functional -->
-    <div class="accommodation-section">
-        <h2 id="accommodation-title">Accommodations in Marseille</h2>
-                <div id="accommodation-card-container">
-                    <!-- Card type 1 - Accommodations -->
-                        <!--Card1-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-                                alt="Auberge la Cannebiere image">
-                            <div class="accommo-txt-and-star">
-                                <p>Auberge la Cannebiere</p> 
-                                <p>Night starting at <strong>25€</strong></p>
-                                <!-- 4 Star icon blue -->
-                                <div class="star rating"></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-
-                        <!--Card2-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
-                                alt="Hotel du port Image" height="200" width="400">
-                            <div class="accommo-txt-and-star">
-                                <p>Hotel du port</p> 
-                                <p>Night starting at <strong>52€</strong></p>
-                                <!-- 5 Star icon blue -->
-                                <div class="star rating"></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </div>
-                        </div>                                   
-                        
-                        <!--Card3-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
-                                alt="Les mouettes Hotel image" height="200" width="400">
-                            <div class="accommo-txt-and-star">
-                                <p>Les mouettes Hotel</p> 
-                                <p>Night starting at <strong>76€</strong></p>
-                                <!-- 4 Star icon blue -->
-                                <div class="star rating"></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div> 
-                        </div>                               
-
-                        <!--Card4-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
-                                alt="Hotel de la mer image" height="200" width="400">
-                            <div class="accommo-txt-and-star">
-                                <p>Hotel de la mer</p> 
-                                <p>Night starting at <strong>46€</strong></p>
-                                <!-- 3 Star icon blue -->
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>                                                           
-                        </div>                                                            
-
-                        <!--Card5-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
-                                alt="Auberge Le Panier image" height="200" width="400">
-                            <div class="accommo-txt-and-star">
-                                <p>Auberge Le Panier</p> 
-                                <p>Night starting at <strong>23€</strong></p>
-                                <!-- 4 Star icon blue -->
-                                <div class="star rating"></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div> 
-                        </div>                                
-
-                        <!--Card6-->
-                        <div class="accommo-card">
-                            <img class="accommo-img" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
-                                alt="Hotel chez Amina image" height="200" width="400">
-                            <div class="accommo-txt-and-star">
-                                <p>Hotel chez Amina</p> 
-                                <p>Night starting at <strong>96€</strong></p>
-                                <!-- 5 Star icon blue -->
-                                <div class="star-rating"></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span> 
-                            </div>                          
-                        </div>
+                        <!--Activities internal Link -->
+                        <a id="activities-link" href="#activities-title">Activities</a>
+                        <!--Activities small screen link-->
+                        <a id="activities-link-small-screen" href="#activities-title">Activities</a>
+                    </div>
                 </div>
-        <p>Show More Text/ link?</p>
-    </div>
-            
+            </div>
+        </header>
+
+        <section>
+            <!-- Title and tagline-->
+            <h1>Find a place for your dream vacation</h1>
+
+            <p id="tagline">Downtown or in nature<p>
+
+        </section>
 
 
-                                    
-            
-<!--Most popular Section-->
-    <div class="popular">    
-        <!--title and star icon-->
-        <div class="mst-p-title-and-star">
-            <!--Most Popular title-->
-            <h2>Most Popular</h2>
-            <!-- Star icon-->
-            <img src="./Icons/star-fill.svg">
+        <section>
+            <!-- Search section -->
+            <!--Functional specs
+        Users will be able to search for accommodation in the town of their
+        choosing. The search field is an input field, so users will need to be
+        able to edit this. This field should be part of a form so that it can be 
+        validated by W3C. The search part does not need to be functional -->
+            <div class="search-panel">
+                <!--map icon-->
+                <img id="map-icon" src="./Icons/geo-alt-fill.svg">
+                <!--form-->
+                <input id="location-form" type="text" name="search" placeholder="Marseille, France">
+                <!--radio search button-->
+                <button id="search-button" type="button">Search</button>
+                <button id="search-button2" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+
+        <section>
+            <!--Filter section-->
+            <!--Functional specs
+            The filters should change appearance during mouseover. I’ll leave
+            the exact effect up to you, I’ve not had time to think about it. But it
+            doesn’t need to be functional  -->
+            <div id="filter-section">
+
+                <h2 id="filter-heading">Filters</h2>
+
+                <div id="filters">
+
+                    <div class="filter-container">
+                        <div id="low-cost">
+                                <!--Low Cost icon -->
+                                <div class="icon-container">
+                                    <img class="filter-icon" src="./Icons/cash-dollar-finance-svgrepo-com.svg" height="50px"
+                                        width="50px">
+                                </div>
+                                <!--Low Cost Text -->
+                                <p class="filter-txt">Low Cost</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-container">
+                        <div id="family-friendly">
+                            <!--Family-Friendly icon -->
+                            <div class="icon-container">
+                                <img class="filter-icon" src="./Icons/person-public-svgrepo-com.svg" height="50px"
+                                    width="50px">
+                            </div>
+                            <!--Family-Friendly text -->
+                            <p class="filter-txt">Family-Friendly</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-container">
+                        <div id="romantic">
+                            <!--Romantic icon-->
+                            <div class="icon-container">
+                                <img class="filter-icon" src="./Icons/heart-filled-svgrepo-com.svg" height="50px"
+                                    width="50px">
+                            </div>
+                            <!--Romantic text-->
+                            <p class="filter-txt">Romantic</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-container">
+                        <div id="pets-allowed">
+                            <!--Pets Allowed icon-->
+                            <div class="icon-container">
+                                <img class="filter-icon" src="./Icons/paw-svgrepo-com.svg" height="50" width="50">
+                            </div>
+                            <!--Pets Allowed text-->
+                            <p class="filter-txt">Pets allowed</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        
+        </section>
+
+        <!--info section-->
+        <div class="info-section">
+            <!--info icon-->
+            <img id="info-icon" src="./Icons/info-circle-fill.svg">
+            <!--INFO text-->
+            <p id="cityinfo"> More than 500 accommodations are available in this city <p>
         </div>
-    <div class="pop-card-container"-->  
+
+
+<div id="accommodation-and-popular">
+        <!--Accommodations in Marseille Section-->
+        <!--Functional specs
+    Users will be able to search for accommodation in the town of their
+    choosing. The search field is an input field, so users will need to be
+    able to edit this. This field should be part of a form so that it can be 
+    validated by W3C. The search part does not need to be functional -->
+        <div id="accommodation-section">
+            <h2 id="accommodation-title">Accommodations in Marseille</h2>
+            <div id="accommodation-card-container">
+                <!-- Card type 1 - Accommodations -->
+                <!--Card1-->
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-1">
+                        <img class="accommo-img" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge la Cannebiere image" height="100" width="150">
+                        <div class="accommo-txt-and-star">
+                            <p>Auberge la Cannebiere</p>
+                            <p>Night starting at <strong>25€</strong></p>
+                            <!-- 4 Star icon blue -->
+                            <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Card2-->
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-2">
+                        <img class="accommo-img" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                            alt="Hotel du port Image" height="100" width="150">
+                        <div class="accommo-txt-and-star">
+                            <p>Hotel du port</p>
+                            <p>Night starting at <strong>52€</strong></p>
+                            <!-- 5 Star icon blue -->
+                        <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Card3-->
+
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-3">
+                        <img class="accommo-img" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            alt="Les mouettes Hotel image" height="100" width="150">
+                        <div class="accommo-txt-and-star">
+                            <p>Les mouettes Hotel</p>
+                            <p>Night starting at <strong>76€</strong></p>
+                            <!-- 4 Star icon blue -->
+                            <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div> 
+                        </div>
+                    </div>
+                </a>
+
+                <!--Card4-->
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-4">
+                        <img class="accommo-img" src="./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                            alt="Hotel de la mer image" height="200" width="400">
+                        <div class="accommo-txt-and-star">
+                            <p>Hotel de la mer</p>
+                            <p>Night starting at <strong>46€</strong></p>
+                            <!-- 3 Star icon blue -->
+                            <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Card5-->
+
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-5">
+                        <img class="accommo-img" src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Auberge Le Panier image" height="200" width="400">
+                        <div class="accommo-txt-and-star">
+                            <p>Auberge Le Panier</p>
+                            <p>Night starting at <strong>23€</strong></p>
+                            <!-- 4 Star icon blue -->
+                            <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!--Card6-->
+                <a class="card-link" href="#">
+                    <div id="accommodation-card-6">
+                        <img class="accommo-img" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="Hotel chez Amina image" height="200" width="400">
+                        <div class="accommo-txt-and-star">
+                            <p>Hotel chez Amina</p>
+                            <p>Night starting at <strong>96€</strong></p>
+                            <!-- 5 Star icon blue -->
+                            <div class="star-rating-acc">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <p>Show More Text/ link?</p>
+        </div>
+
+
+        <!--Most popular Section-->
+        <div id="popular">
+            <!--title and star icon-->
+            <div id="mst-p-title-and-star">
+                <!--Most Popular title-->
+                <h2 id="most-popular-heading">Most Popular</h2>
+                <!-- Star icon-->
+                <img id="pop-icon"src="./Icons/star-fill.svg">
+            </div>
+            <div class="pop-card-container" -->
                 <!-- Card type 2 - Most Popular -->
                 <!--Card7-->
-                <div class="most-popular-card">
-                    <img class="popular-img" src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
-                    alt="Hotel chez Amina image" height="100" width="100">
-                        <!--popular text-->    
-                        <div class="pop-txt">
-                            <p>Morning Sun Hotel</p> 
-                            <p>Night starting at <strong>128€</strong></p>
-                        </div>
+                <a class="card-link" href="#">
+                    <div class="most-popular-card">
+                        <img class="popular-img"
+                            src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Hotel chez Amina image" height="100" width="100">
+                        <div class="pop-txt-and-star-container">
+                                <!--popular text-->
+                            <div class="pop-txt">
+                                <p>Morning Sun Hotel</p>
+                                <p>Night starting at <strong>128€</strong></p>
+                            </div>
                             <!-- 5 Star icon blue -->
-                        <div class="star-rating"></div>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-
-                </div>                                
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
                 <!--Card8-->
-                <div class="most-popular-card">
-                    <img class="popular-img" src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" 
-                    alt="Hotel chez Amina image" height="100" width="100">
-                        <!--popular text-->
-                        <div class="pop-txt">
-                            <p>Au coeur de l'eau Bed and Breakfast</p> 
-                            <p>Night starting at <strong>71€</strong></p>
+                <a class="card-link" href="#">
+                    <div class="most-popular-card">
+                        <img class="popular-img" 
+                        src="./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="Hotel chez Amina image" height="100" width="100">
+                        <div class="pop-txt-and-star-container">
+                            <!--popular text-->
+                            <div class="pop-txt">
+                                <p>Au coeur de l'eau Bed and Breakfast</p>
+                                <p>Night starting at <strong>71€</strong></p>
+                            </div>
+                            <!-- 4 Star icon blue -->
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
                         </div>
-                        <!-- 4 Star icon blue -->
-                        <div class="star-rating"></div>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-
-                </div> 
+                    </div>
+                </a>
 
                 <!--Card9-->
-                <div class="most-popular-card">
-                    <img  class="popular-img" src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
-                    alt="Tout bleu et Blanc Hotel" height="100" width="100">
-                        <!--popular text-->
-                        <div class="pop-txt">
-                            <p>Tout bleu et Blanc Hotel</p> 
-                            <p>Night starting at <strong>68€</strong></p>
-                        </div>
-                        <!-- 4 Star icon blue -->
-                        <div class="star-rating"></div>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-
-
+                <a class="card-link" href="#">
+                    <div class="most-popular-card">
+                        <img class="popular-img"
+                            src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            alt="Tout bleu et Blanc Hotel" height="100" width="100">
+                            <div class="pop-txt-and-star-container">
+                                <!--popular text-->
+                                <div class="pop-txt">
+                                    <p>Tout bleu et Blanc Hotel</p>
+                                    <p>Night starting at <strong>68€</strong></p>
+                                </div>
+                                <!-- 4 Star icon blue -->
+                                <div class="star-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                    </div>
+                </a>
             </div>
-    </div>
-    </div>                                 
+        </div>
+</div> 
+
+        <!--Activities in Marseille-->
+        <p id="activities-title">Activities in Marseille</p>
+        <!-- Card type 3 - Activities -->
+        <!--Card10-->
+        <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port image"
+            height="300" width="220">
+        <p>Old Port</p>
+
+        <!--Card11-->
+        <img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort image"
+            height="200" width="220">
+        <p>Pomegues Fort</p>
+
+        <!--Card12-->
+        <img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island image"
+            height="100" width="220">
+        <p>Frioul Island</p>
+
+        <!--Card13-->
+        <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park"
+            height="300" width="220">
+        <p>Calanques National Park</p>
+
+        <!--Card14-->
+        <img src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garder"
+            height="200" width="220">
+        <p>Notre-Dame-de-la-Garder</p>
+
+        <!--Card15-->
+        <img src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Old Port image" height="100"
+            width="220">
+        <p>Longchamp Park</p>
+    </main>
 
 
 
-<!--Activities in Marseille-->
-    <p id="activities-title">Activities in Marseille</p>
-        <!-- Card type 3 - Activities -->    
-            <!--Card10-->
-                <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
-                            alt="Old Port image" height="300" width="220">
-                <p>Old Port</p>  
-
-            <!--Card11-->
-                <img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
-                            alt="Pomegues Fort image" height="200" width="220">
-                <p>Pomegues Fort</p>                                
-
-            <!--Card12-->
-                <img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
-                        alt="Frioul Island image" height="100" width="220">
-                <p>Frioul Island</p>  
-
-            <!--Card13-->
-                <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
-                        alt="Calanques National Park" height="300" width="220">
-                <p>Calanques National Park</p>
-
-            <!--Card14-->
-                <img src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
-                        alt="Notre-Dame-de-la-Garder" height="200" width="220">
-                <p>Notre-Dame-de-la-Garder</p>
-
-            <!--Card15-->
-                <img src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
-                        alt="Old Port image" height="100" width="220">
-                <p>Longchamp Park</p> 
-</main>
-    
-
-    
-<footer>
+    <footer>
         <div class="bottom-panel">
 
             <div class="FAQcolumn">
                 <h4>About</h4>
-                    <ul>
-                        <li><a class="bottom-links" href="#">Site Map</a></li>
-                        <br>
-                        <li><a class="bottom-links" href="#">General Terms and Conditions</a></li>
-                        <br>
-                        <li><a class="bottom-links" href="#">Data and Privacy</a></li>
-                    </ul>
+                <ul>
+                    <li><a class="bottom-links" href="#">Site Map</a></li>
+                    <br>
+                    <li><a class="bottom-links" href="#">General Terms and Conditions</a></li>
+                    <br>
+                    <li><a class="bottom-links" href="#">Data and Privacy</a></li>
+                </ul>
             </div>
 
             <div class="FAQcolumn">
                 <h4>Our Accommodations</h4>
-                    <ul>
-                        <li><a class="bottom-links" href="#">Quality Assessment</a></li>
-                        <br>
-                        <li><a class="bottom-links" href="#">You have a hotel?</a></li>
-                    </ul>
+                <ul>
+                    <li><a class="bottom-links" href="#">Quality Assessment</a></li>
+                    <br>
+                    <li><a class="bottom-links" href="#">You have a hotel?</a></li>
+                </ul>
             </div>
 
             <div class="FAQcolumn">
-                <h4>Assistance</h4> 
-                    <ul>
-                        <li><a class="bottom-links" href="#">Help Desk</a></li>
-                        <br>
-                        <li><a class="bottom-links" href="#">Contact Us</a></li>
-                    </ul>
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a class="bottom-links" href="#">Help Desk</a></li>
+                    <br>
+                    <li><a class="bottom-links" href="#">Contact Us</a></li>
+                </ul>
             </div>
 
         </div>
-</footer>
-   
-    
+    </footer>
+
+
 </body>
+
 </html>
