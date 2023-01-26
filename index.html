@@ -74,68 +74,61 @@
         </section>
 
 
-        <section>
+        <section id="filter-section">
             <!--Filter section-->
             <!--Functional specs
             The filters should change appearance during mouseover. I’ll leave
             the exact effect up to you, I’ve not had time to think about it. But it
             doesn’t need to be functional  -->
-            <div id="filter-section">
-
                 <h2 id="filter-heading">Filters</h2>
-
                 <div id="filters">
-
-                    <div class="filter-container">
-                        <div id="low-cost">
-                                <!--Low Cost icon -->
-                                <div class="icon-container">
-                                    <img class="filter-icon" src="./Icons/cash-dollar-finance-svgrepo-com.svg" height="50px"
-                                        width="50px">
-                                </div>
-                                <!--Low Cost Text -->
-                                <p class="filter-txt">Low Cost</p>
+                    <div class="filter-container" id="low-cost">
+                        <!--Low Cost icon -->
+                        <div class="icon-container">
+                            <img class="filter-icon" src="./Icons/cash-dollar-finance-svgrepo-com.svg" height="50px" width="50px">
                         </div>
+                        <!--Low Cost Text -->
+                        <p class="filter-txt">Low Cost</p>
                     </div>
 
-                    <div class="filter-container">
-                        <div id="family-friendly">
-                            <!--Family-Friendly icon -->
-                            <div class="icon-container">
-                                <img class="filter-icon" src="./Icons/person-public-svgrepo-com.svg" height="50px"
-                                    width="50px">
-                            </div>
-                            <!--Family-Friendly text -->
-                            <p class="filter-txt">Family-Friendly</p>
+
+                    <!--<button class="b-filter">
+                         <i class="fas fa-money-bill-wave"></i>
+                            <span>Low cost</span>
+                        </button>
+-->
+
+                    <div class="filter-container" id="family-friendly">
+                        <!--Family-Friendly icon -->
+                        <div class="icon-container">
+                            <img class="filter-icon" src="./Icons/person-public-svgrepo-com.svg" height="50px" width="50px">
                         </div>
+                        <!--Family-Friendly text -->
+                        <p class="filter-txt">Family-Friendly</p>
                     </div>
 
-                    <div class="filter-container">
-                        <div id="romantic">
-                            <!--Romantic icon-->
-                            <div class="icon-container">
-                                <img class="filter-icon" src="./Icons/heart-filled-svgrepo-com.svg" height="50px"
-                                    width="50px">
-                            </div>
-                            <!--Romantic text-->
-                            <p class="filter-txt">Romantic</p>
+                    <div class="filter-container" id="romantic">
+                        <!--Romantic icon-->
+                        <div class="icon-container">
+                            <img class="filter-icon" src="./Icons/heart-filled-svgrepo-com.svg" height="50px" width="50px">
                         </div>
+                        <!--Romantic text-->
+                        <p class="filter-txt">Romantic</p>
                     </div>
 
-                    <div class="filter-container">
-                        <div id="pets-allowed">
-                            <!--Pets Allowed icon-->
-                            <div class="icon-container">
-                                <img class="filter-icon" src="./Icons/paw-svgrepo-com.svg" height="50" width="50">
-                            </div>
-                            <!--Pets Allowed text-->
-                            <p class="filter-txt">Pets allowed</p>
+                    <div class="filter-container" id="pets-allowed">
+                        <!--Pets Allowed icon-->
+                        <div class="icon-container">
+                            <img class="filter-icon" src="./Icons/paw-svgrepo-com.svg" height="50" width="50">
                         </div>
+                        <!--Pets Allowed text-->
+                        <p class="filter-txt">Pets allowed</p>
                     </div>
-                    
                 </div>
-            </div> 
-        
+
+
+
+       
         </section>
 
         <!--info section-->
@@ -150,10 +143,10 @@
 <div id="accommodation-and-popular">
         <!--Accommodations in Marseille Section-->
         <!--Functional specs
-    Users will be able to search for accommodation in the town of their
-    choosing. The search field is an input field, so users will need to be
-    able to edit this. This field should be part of a form so that it can be 
-    validated by W3C. The search part does not need to be functional -->
+        Users will be able to search for accommodation in the town of their
+        choosing. The search field is an input field, so users will need to be
+        able to edit this. This field should be part of a form so that it can be 
+        validated by W3C. The search part does not need to be functional -->
         <div id="accommodation-section">
             <h2 id="accommodation-title">Accommodations in Marseille</h2>
             <div id="accommodation-card-container">
@@ -165,7 +158,7 @@
                             alt="Auberge la Cannebiere image" height="100" width="150">
                         <div class="accommo-txt-and-star">
                             <p>Auberge la Cannebiere</p>
-                            <p>Night starting at <strong>25€</strong></p>
+                            <p>Night starting at <b>25€</b></p>
                             <!-- 4 Star icon blue -->
                             <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -185,7 +178,7 @@
                             alt="Hotel du port Image" height="100" width="150">
                         <div class="accommo-txt-and-star">
                             <p>Hotel du port</p>
-                            <p>Night starting at <strong>52€</strong></p>
+                            <p>Night starting at <b>52€</b></p>
                             <!-- 5 Star icon blue -->
                         <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -206,7 +199,7 @@
                             alt="Les mouettes Hotel image" height="100" width="150">
                         <div class="accommo-txt-and-star">
                             <p>Les mouettes Hotel</p>
-                            <p>Night starting at <strong>76€</strong></p>
+                            <p>Night starting at <b>76€</b></p>
                             <!-- 4 Star icon blue -->
                             <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -226,7 +219,7 @@
                             alt="Hotel de la mer image" height="200" width="400">
                         <div class="accommo-txt-and-star">
                             <p>Hotel de la mer</p>
-                            <p>Night starting at <strong>46€</strong></p>
+                            <p>Night starting at <b>46€</b></p>
                             <!-- 3 Star icon blue -->
                             <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -247,7 +240,7 @@
                             alt="Auberge Le Panier image" height="200" width="400">
                         <div class="accommo-txt-and-star">
                             <p>Auberge Le Panier</p>
-                            <p>Night starting at <strong>23€</strong></p>
+                            <p>Night starting at <b>23€</b></p>
                             <!-- 4 Star icon blue -->
                             <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -268,7 +261,7 @@
                             alt="Hotel chez Amina image" height="200" width="400">
                         <div class="accommo-txt-and-star">
                             <p>Hotel chez Amina</p>
-                            <p>Night starting at <strong>96€</strong></p>
+                            <p>Night starting at <b>96€</b></p>
                             <!-- 5 Star icon blue -->
                             <div class="star-rating-acc">
                                 <span class="fa fa-star checked"></span>
@@ -307,7 +300,7 @@
                                 <!--popular text-->
                             <div class="pop-txt">
                                 <p>Morning Sun Hotel</p>
-                                <p>Night starting at <strong>128€</strong></p>
+                                <p>Night starting at <b>128€</b></p>
                             </div>
                             <!-- 5 Star icon blue -->
                             <div class="star-rating">
@@ -331,7 +324,7 @@
                             <!--popular text-->
                             <div class="pop-txt">
                                 <p>Au coeur de l'eau Bed and Breakfast</p>
-                                <p>Night starting at <strong>71€</strong></p>
+                                <p>Night starting at <b>71€</b></p>
                             </div>
                             <!-- 4 Star icon blue -->
                             <div class="star-rating">
@@ -355,7 +348,7 @@
                                 <!--popular text-->
                                 <div class="pop-txt">
                                     <p>Tout bleu et Blanc Hotel</p>
-                                    <p>Night starting at <strong>68€</strong></p>
+                                    <p>Night starting at <b>68€</b></p>
                                 </div>
                                 <!-- 4 Star icon blue -->
                                 <div class="star-rating">
@@ -370,41 +363,72 @@
                 </a>
             </div>
         </div>
-</div> 
+    </div> 
 
+    <h2 id="activities-title">Activities in Marseille</p>
+    
+    <section id="minor-section">
         <!--Activities in Marseille-->
-        <p id="activities-title">Activities in Marseille</p>
+        
         <!-- Card type 3 - Activities -->
-        <!--Card10-->
-        <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port image"
-            height="300" width="220">
-        <p>Old Port</p>
+        <div class="activities-container"> 
+            <!--Card10-->
+            <div class="activities-card" id="old-port">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port image" height="300" width="300">
+                    <p class="act-txt">Old Port</p>
+                </a>
+            </div>
 
-        <!--Card11-->
-        <img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort image"
-            height="200" width="220">
-        <p>Pomegues Fort</p>
+            <!--Card11-->
+            <div class="activities-card" id="pomegues-fort">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort image" height="175" width="300">
+                    <p class="act-txt">Pomegues Fort</p>
+                </a> 
+            </div>
+              
 
-        <!--Card12-->
-        <img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island image"
-            height="100" width="220">
-        <p>Frioul Island</p>
+            <!--Card12-->
+            <div class="activities-card" id="frioul-island">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island image" height="125" width="300">
+                    <p class="act-txt">Frioul Island</p>
+                </a>
+            </div>
+            
 
-        <!--Card13-->
-        <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park"
-            height="300" width="220">
-        <p>Calanques National Park</p>
+            <!--Card13-->
+            <div class="activities-card" id="calanques-national-park">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" height="300" width="300">
+                    <p class="act-txt">Calanques National Park</p>
+                </a>
+            </div>
+            
 
-        <!--Card14-->
-        <img src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garder"
-            height="200" width="220">
-        <p>Notre-Dame-de-la-Garder</p>
+            <!--Card14-->
+            <div class="activities-card" id="notre-dame-de-la-garder">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garder" height="100" width="300">
+                    <p class="act-txt">Notre-Dame-de-la-Garder</p>
+                </a>  
+            </div>
+              
 
-        <!--Card15-->
-        <img src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Old Port image" height="100"
-            width="220">
-        <p>Longchamp Park</p>
-    </main>
+            <!--Card15-->
+            <div class="activities-card" id="Longchamp Park">
+                <a class="act-link" href="#">
+                    <img class="act-img" src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Old Port image" height="100" width="300">
+                    <p class="act-txt">Longchamp Park</p>
+                </a>
+            </div>
+            
+        </div>
+
+    </section>
+
+</main>
 
 
 
