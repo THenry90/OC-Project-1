@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki Landing page</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+
     <style>
         body {
             font-family: 'Raleway', serif;
@@ -21,30 +27,31 @@
 
 <body>
 
-    <main>
-
-        <!-- Nav Bar-->
-        <header>
-            <div class="navbar">
-                <div id="nav-container">
-                    <!--Logo-->
-                    <img id="logo" src="./images/logo/Booki.png" height="50px">
-                    <!--links section-->
-                    <!--make sure to have top border blue one selection as well as text colour change -->
-                    <div id="toplinks">
-                        <!--Accommodations internal Link-->
-                        <a id="accommodation-link" href="#accommodation-title">Accommodations</a>
-                        <!--Accommodations small screen link -->
-                        <a id="accommodation-link-small-screen" href="#accommodation-title">Accommodations</a>
-
-                        <!--Activities internal Link -->
-                        <a id="activities-link" href="#activities-title">Activities</a>
-                        <!--Activities small screen link-->
-                        <a id="activities-link-small-screen" href="#activities-title">Activities</a>
-                    </div>
+    <!-- Nav Bar-->
+    <header>
+        <div class="navbar">
+            <div id="nav-container">
+                <!--Logo-->
+                <img id="logo" src="./images/logo/Booki.png" height="50px">
+                <!--links section-->
+                <!--make sure to have top border blue one selection as well as text colour change -->
+                <div class="toplinks">
+                    <!--Accommodations internal Link-->
+                    <a id="accommodation-link" href="#accommodation-title">Accommodations</a>
+                    <!--Accommodations small screen link -->
+                    <a id="accommodation-link-small-screen" href="#accommodation-title">Accommodations</a>
+                    <!--Activities internal Link -->
+                    <a id="activities-link" href="#activities-title">Activities</a>
+                    <!--Activities small screen link-->
+                    <a id="activities-link-small-screen" href="#activities-title">Activities</a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <main>
+
+
 
         <section>
             <!-- Title and tagline-->
@@ -68,7 +75,7 @@
                 <!--form-->
                 <input id="location-form" type="text" name="search" placeholder="Marseille, France">
                 <!--radio search button-->
-                <button id="search-button" type="button">Search</button>
+                <button id="search-button" type="submit">Search</button>
                 <button id="search-button2" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </section>
@@ -371,9 +378,9 @@
         <!--Activities in Marseille-->
         
         <!-- Card type 3 - Activities -->
-        <div class="activities-container"> 
+        <div class="act-container"> 
             <!--Card10-->
-            <div class="activities-card" id="old-port">
+            <div class="act-card" id="old-port">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port image" height="300" width="300">
                     <p class="act-txt">Old Port</p>
@@ -381,7 +388,7 @@
             </div>
 
             <!--Card11-->
-            <div class="activities-card" id="pomegues-fort">
+            <div class="act-card" id="pomegues-fort">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort image" height="175" width="300">
                     <p class="act-txt">Pomegues Fort</p>
@@ -390,7 +397,7 @@
               
 
             <!--Card12-->
-            <div class="activities-card" id="frioul-island">
+            <div class="act-card" id="frioul-island">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island image" height="125" width="300">
                     <p class="act-txt">Frioul Island</p>
@@ -399,7 +406,7 @@
             
 
             <!--Card13-->
-            <div class="activities-card" id="calanques-national-park">
+            <div class="act-card" id="calanques-national-park">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" height="300" width="300">
                     <p class="act-txt">Calanques National Park</p>
@@ -408,7 +415,7 @@
             
 
             <!--Card14-->
-            <div class="activities-card" id="notre-dame-de-la-garder">
+            <div class="act-card" id="notre-dame-de-la-garder">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garder" height="100" width="300">
                     <p class="act-txt">Notre-Dame-de-la-Garder</p>
@@ -417,7 +424,7 @@
               
 
             <!--Card15-->
-            <div class="activities-card" id="Longchamp Park">
+            <div class="act-card" id="Longchamp Park">
                 <a class="act-link" href="#">
                     <img class="act-img" src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Old Port image" height="100" width="300">
                     <p class="act-txt">Longchamp Park</p>
@@ -436,8 +443,8 @@
         <div class="bottom-panel">
 
             <div class="FAQcolumn">
-                <h4>About</h4>
-                <ul>
+                <a class="bottom-links" id="about" href="#"><h4>About</h4></a>
+                <ul class="foot-list">
                     <li><a class="bottom-links" href="#">Site Map</a></li>
                     <br>
                     <li><a class="bottom-links" href="#">General Terms and Conditions</a></li>
@@ -447,8 +454,8 @@
             </div>
 
             <div class="FAQcolumn">
-                <h4>Our Accommodations</h4>
-                <ul>
+                <a class="bottom-links" id="our-accommmodations" href="#"><h4>Our Accommodations</h4></a>
+                <ul class="foot-list">
                     <li><a class="bottom-links" href="#">Quality Assessment</a></li>
                     <br>
                     <li><a class="bottom-links" href="#">You have a hotel?</a></li>
@@ -456,8 +463,8 @@
             </div>
 
             <div class="FAQcolumn">
-                <h4>Assistance</h4>
-                <ul>
+                <a class="bottom-links" id="assisstance" href="#"><h4>Assistance</h4></a>
+                <ul class="foot-list">
                     <li><a class="bottom-links" href="#">Help Desk</a></li>
                     <br>
                     <li><a class="bottom-links" href="#">Contact Us</a></li>
