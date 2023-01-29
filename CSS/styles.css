@@ -313,6 +313,7 @@ h1 {
     border-style:solid;
     border-color:green;
     display:flex;
+    min-width:655px;
 }
 
 #filter-heading {
@@ -331,6 +332,7 @@ h1 {
     display:flex;
     align-items:center;
     padding-right:30%;
+    min-width:655px;
 }
 
 .filter-container {
@@ -344,6 +346,7 @@ h1 {
     max-height: fit-content;
     min-width:fit-content;
     max-width:fit-content;
+ 
      
 }
 
@@ -355,6 +358,7 @@ h1 {
         border-color:green;
         display:flex;
         flex-wrap:wrap;
+        min-width:600px;
     }
 
     #filters {
@@ -364,6 +368,7 @@ h1 {
         max-width:fit-content;
         display:flex;
         flex-wrap:wrap;
+        
     }
 
     .filter-container{
@@ -372,15 +377,29 @@ h1 {
     }
 
 
+    #low-cost {
+        order:1;
+
+    }
+
     #romantic {
+        order:2;
+        margin-right: -20px;
+    }
+
+    #family-friendly {
+        order:3;
+        position:relative;
+        right:76px;
 
     }
        
     #pets-allowed {
+        order:4;
         margin:auto;
        margin-right:100px;
-
-
+       position:relative;
+       right:108px;
     }
 
 
@@ -663,9 +682,12 @@ margin:auto;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    
     max-width: 33%;
     min-width: 500px;
+    border: red 1px solid;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
     
    
 
@@ -674,13 +696,13 @@ margin:auto;
 
 #mst-p-title-and-star {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top:15px;
 }
 
 .star-rating-acc{
     padding:5px;
-    
+    justify-content:flex-end;
 }
 
 
@@ -712,17 +734,23 @@ margin:auto;
         margin:auto;
         padding:30px;
         border-radius:0px;
+        
 
     }
 
     #mst-p-title-and-star {
         justify-content:space-around;
         margin:auto;
+        display:flex;
+        border:1px solid purple;
+        width:100%;
     }
 
     #most-popular-heading {
         font-size:72;
         padding-left:15%;
+        display:flex;
+        border:blue 1px solid;
     }
 
     #pop-icon{
@@ -818,9 +846,10 @@ margin-top:-8px;
 
 #minor-section {
 
-margin: 50px 30px;
+
 border:red solid 2px;
 justify-content:center;
+min-width:1300px:
 
 
 
@@ -831,11 +860,13 @@ justify-content:center;
     flex-flow:column wrap;
     
     border:solid 2px blue;
-    gap: 30px;
+    max-width:1290px;
+    
     min-width:fit-content;
-    height: 350px;
+    height: 460px;
     min-height:fit-content;
     margin:auto;
+    
 
 }
 
@@ -847,6 +878,7 @@ justify-content:center;
     max-width:320px;
     max-height:fit-content;
     min-height:fit-content;
+    margin:10px;
   
     
 }
@@ -859,6 +891,7 @@ justify-content:center;
     max-height:fit-content;
     align-self:stretch;
     flex-basis: 0 1 100%;
+    height:420px;
 }
 .activities-container div:nth-child(2) {
     background-color:lightblue;
@@ -866,12 +899,13 @@ justify-content:center;
     max-width:300px;
     min-height:fit-content;
     align-self:start;
+    height:240px;
 }
 
 .activities-container div:nth-child(3) {
     background-color:greenyellow;
     flex-basis: 0 1 30%;
-    height: 180px;
+    height: 160px;
     max-width:300px;
     align-self:end;
 }
@@ -880,19 +914,21 @@ justify-content:center;
     max-width:300px;
     flex-basis: 0 1 100%;
     align-self:stretch;
+    height:420px;
 }
 .activities-container div:nth-child(5) {
     background-color:purple;
     max-width:300px;
     height: 180px;
     flex-basis: 0 1 45%;
+    height:200px;
     align-self:start;
 }
 .activities-container div:nth-child(6) {
     background-color:yellow;
     flex-basis: 0 1 45%;
     max-width:300px;
-    height: 180px;
+    height: 200px;
     align-self:end;
 }
 
