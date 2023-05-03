@@ -1,3 +1,3 @@
 Booki Landing page project
 
-Github url: https://webdevnulo.github.io/OC-Project-1
+Github url: https://thenry90.github.io/OC-Project-1/
